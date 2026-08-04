@@ -6,6 +6,9 @@ const Sidebar = () => {
   return (
     <>
       <aside className='sidebar'>
+        <h1>Dietetica y <br />
+        Nutricion</h1>
+        <hr />
         <nav>
           <NavLink to="/inventario">Inventario</NavLink>
           <NavLink to="/nuevo-producto">Nuevo Producto</NavLink>

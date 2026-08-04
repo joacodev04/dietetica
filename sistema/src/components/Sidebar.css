@@ -1,7 +1,7 @@
 .sidebar {
   width: 250px;
   height: 100vh; /* Toda la altura de la pantalla */
-  background-color: #e3e2e2;
+  background-color: #F8FAFC;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -15,7 +15,8 @@
 }
 
 .sidebar a {
-  color: rgb(29, 33, 116);
+  color: rgb(15, 76, 129);
+  font-weight: 600;
   font-family: 'Inter', sans-serif;
   text-decoration: none;
   font-size: 18px;
