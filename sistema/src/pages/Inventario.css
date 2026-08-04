@@ -1,0 +1,39 @@
+.header-inventario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid rgb(29, 33, 116);
+  background-color: #e3e2e2;
+  padding: 20px;
+}
+
+h1 {
+  color: rgb(29, 33, 116);
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  width: 350px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
