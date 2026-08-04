@@ -1,6 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Sidebar from './components/Sidebar'
+import Sidebar from './components/Sidebar/Sidebar'
 import Inventario from './pages/Inventario'
 import NuevoProducto from './pages/NuevoProducto'
 import Administracion from './pages/Administracion'

@@ -6,7 +6,6 @@ const Tablas = () => {
   return (
     <>
        <div className="card border-0 shadow-sm p-4">
-            {/* Cabecera */}
             <div className="d-flex justify-content-between align-items-center mb-4">
                 <h4 className="fw-bold text-dark m-0">Inventario General</h4>
                 <button className="btn btn-primary fw-semibold px-3 py-2">
@@ -14,7 +13,6 @@ const Tablas = () => {
                 </button>
             </div>
 
-            {/* Tabla */}
             <div className="table-responsive">
                 <table className="table table-hover align-middle mb-0">
                     <thead className="table-light">
