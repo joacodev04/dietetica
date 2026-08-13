@@ -11,7 +11,7 @@ const NuevoProducto = () => {
         <button>Buscar</button>
       </div>
       </div>
-    <div className="inventario-container">
+    <div className="nuevo-producto-container">
       <div className='container-info-prods'>
 <div className='card-header'>
   <span className='icon-info'>ⓘ</span>
