@@ -9,7 +9,7 @@ const Sidebar = () => {
     { nombre: 'Ver todos', pagina: '/ver-todo' },
     { nombre: 'Catalogo', pagina: '/catalogo' },
     { nombre: 'Movimientos', pagina: '/movimientos' },
-    { nombre: 'Vencimiento', pagina: '/vencimiento' }
+    { nombre: 'Vencimiento', pagina: '/vencimiento' },
   ]
 
   return (

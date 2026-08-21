@@ -1,7 +1,7 @@
 import React from 'react'
 import './Inventario.css'
-import Tablas from '../components/Tablas/Tablas'
-import InfoProds from '../components/InfoProds/InfoProds'
+import Tablas from "../../components/Tablas/Tablas";
+import InfoProds from "../../components/InfoProds/InfoProds";
 
 const Inventario = () => {
   return (

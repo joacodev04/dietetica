@@ -1,14 +1,14 @@
 import './App.css'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from './components/Sidebar/Sidebar'
-import Inventario from './pages/Inventario'
-import NuevoProducto from './pages/NuevoProducto'
-import Productos from './pages/Productos';
-import Administracion from './pages/Administracion'
-import Catalogo from './pages/Catalogo';
-import Movimientos from './pages/Movimientos'
-import Vencimiento from './pages/Vencimiento';
-import Historial from './pages/Historial';
+import Inventario from './pages/Inventario/Inventario'
+import NuevoProducto from './pages/NuevoProducto/NuevoProducto'
+import Productos from './pages/Productos/Productos';
+import Administracion from './pages/Administracion/Administracion'
+import Catalogo from './pages/Catalogo/Catalogo';
+import Movimientos from './pages/Movimientos/Movimientos'
+import Vencimiento from './pages/Vencimiento/Vencimiento';
+import Historial from './pages/Historial/Historial';
 
 function App() {
 
@@ -27,7 +27,7 @@ function App() {
             <Route path='/catalogo' element={<Catalogo />} />
             <Route path='/movimientos' element={<Movimientos />} />
             <Route path='/vencimiento' element={<Vencimiento />} />
-            <Route path='/Historial' element={<Historial />} />
+            <Route path='/historial' element={<Historial />} />
             <Route path='/administracion' element={<Administracion />} />
           </Routes>
         </main>
