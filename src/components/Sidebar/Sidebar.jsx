@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Sidebar.css'
 
 const Sidebar = () => {
+  const [open, setOpen] = useState(false)
+
+  const seccionesProductos = [
+    { nombre: 'Ver todos', pagina: '/ver-todo' },
+    { nombre: 'Catalogo', pagina: '/catalogo' },
+    { nombre: 'Movimientos', pagina: '/movimientos' },
+    { nombre: 'Vencimiento', pagina: '/vencimiento' }
+  ]
+
   return (
     <>
       <aside className='sidebar'>
@@ -12,8 +21,27 @@ const Sidebar = () => {
         <nav>
           <NavLink to="/inventario">Inventario</NavLink>
           <NavLink to="/nuevo-producto">Nuevo Producto</NavLink>
+
+          <div className="dropdown-wrapper">
+            <button
+              type="button"
+              className="dropdown-toggle"
+              onClick={() => setOpen(!open)}
+            >
+              Productos
+            </button>
+
+            <div className={`dropdown-content ${open ? 'dropdown-open' : ''}`}>
+              {seccionesProductos.map((s) => (
+                <NavLink key={s.nombre} to={s.pagina} className="dropdown-item">
+                  {s.nombre}
+                </NavLink>
+              ))}
+            </div>
+          </div>
+          <NavLink to="/historial">Historial</NavLink>
           <NavLink to="/administracion">Administracion</NavLink>
-          </nav>
+        </nav>
       </aside>
     </>
   )

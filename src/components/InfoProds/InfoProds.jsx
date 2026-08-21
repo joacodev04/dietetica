@@ -16,11 +16,6 @@ const InfoProds = () => {
             </div>
 
             <div className="info-card">
-                <p className="titulo">VALOR TOTAL</p>
-                <h2>$0</h2>
-            </div>
-
-            <div className="info-card">
                 <p className="titulo">PEDIDOS ACTIVOS</p>
                 <h2>0 🚚</h2>
             </div>
