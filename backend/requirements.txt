@@ -1,0 +1,4 @@
+Flask
+Flask-Cors
+
+#Para instalar todo el archivo: pip install -r requirements.txt
