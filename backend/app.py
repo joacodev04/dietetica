@@ -15,14 +15,13 @@ def login():
     data = request.get_json()
 
     #Obtengo los datos que me mandan por el form del front
-    #OJO: la clave tiene que ser igual a la que manda React (JSON.stringify({ usuario, password }))
     usuario = data.get('usuario')
     password = data.get('password')
 
     usuarios = lista_admin()
 
-    #Recorro la lista guardada en usuarios, cada usuario se guarda en "x"
-    #Valido si los datos de "x" son iguales a "usuario" y "password"
+    #Recorro la lista guardada en usuarios, cada usuario se guarda en x
+    #Valido si los datos de x son iguales a "usuario" y "password"
     #Retorno la validacion
     for x in usuarios:
         if x['usuario'] == usuario and x['password'] == password:
