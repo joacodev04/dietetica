@@ -9,6 +9,7 @@ import Catalogo from './pages/Catalogo/Catalogo';
 import Movimientos from './pages/Movimientos/Movimientos'
 import Vencimiento from './pages/Vencimiento/Vencimiento';
 import Historial from './pages/Historial/Historial';
+import Panel from './pages/Panel/Panel';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
             <Route path='/vencimiento' element={<Vencimiento />} />
             <Route path='/historial' element={<Historial />} />
             <Route path='/administracion' element={<Administracion />} />
+            <Route path='/Panel' element={<Panel />} />
           </Routes>
         </main>
       </div>

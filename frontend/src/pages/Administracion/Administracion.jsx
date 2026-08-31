@@ -1,8 +1,12 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Administracion.css";
 
 const Administracion = () => {
+  //Navigate permite navegar en las paginas en react
+  const navigate = useNavigate();
+
   //Guardo los valores que me mandan y que pueden cambio de estado con el useState
   //Guardo los datos que me mandan
   //Arranca en 0, por eso ''
@@ -27,9 +31,14 @@ const Administracion = () => {
       //Convierte la respuesta del servidor (que llega como JSON) en un objeto de JavaScript.
       const data = await response.json();
 
+      //Si la respuesta que me mandan por POST es correcta, va a redigir a /Panel
+      if (response.ok){
+        navigate('/Panel')
+      }else{
       // El back siempre manda "message" (tanto en éxito como en error),
       // así que directamente lo mostramos sin necesidad de un if/else
       setMensaje(data.message);
+      }
 
     } catch (error) {
       // Se ejecuta si falla la conexión (server apagado, sin internet, etc.)
