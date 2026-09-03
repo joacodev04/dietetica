@@ -3,13 +3,14 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Sidebar from './components/Sidebar/Sidebar'
 import Inventario from './pages/Inventario/Inventario'
 import NuevoProducto from './pages/NuevoProducto/NuevoProducto'
-import Productos from './pages/Productos/Productos';
+import Productos from './pages/Productos/Productos'
 import Administracion from './pages/Administracion/Administracion'
-import Catalogo from './pages/Catalogo/Catalogo';
+import Catalogo from './pages/Catalogo/Catalogo'
 import Movimientos from './pages/Movimientos/Movimientos'
-import Vencimiento from './pages/Vencimiento/Vencimiento';
-import Historial from './pages/Historial/Historial';
-import Panel from './pages/Panel/Panel';
+import Vencimiento from './pages/Vencimiento/Vencimiento'
+import Historial from './pages/Historial/Historial'
+import Panel from './pages/Panel/Panel'
+import CompraVenta from './pages/CompraVenta/CompraVenta'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
             <Route path='/catalogo' element={<Catalogo />} />
             <Route path='/movimientos' element={<Movimientos />} />
             <Route path='/vencimiento' element={<Vencimiento />} />
+            <Route path='/compra-venta' element={<CompraVenta />} />
             <Route path='/historial' element={<Historial />} />
             <Route path='/administracion' element={<Administracion />} />
             <Route path='/Panel' element={<Panel />} />
